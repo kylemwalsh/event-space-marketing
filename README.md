@@ -1,46 +1,60 @@
-# Astro Starter Kit: Basics
+# Event Space Marketing
 
-```sh
-npm create astro@latest -- --template basics
+A modern marketing website built with Astro.
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+
+# Build for production
+npm run build
+
+# Preview production build
+npm run preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📦 Deployment
 
-## 🚀 Project Structure
+This project is configured to automatically deploy to GitHub Pages when changes are pushed to the `main` or `master` branch.
 
-Inside of your Astro project, you'll see the following folders and files:
+### Setup Instructions:
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
+1. **Update the Astro config**: Replace `YOUR_USERNAME` in `astro.config.mjs` with your actual GitHub username.
+
+2. **Enable GitHub Pages**:
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" in the sidebar
+   - Under "Source", select "GitHub Actions"
+
+3. **Push your changes**:
+   ```bash
+   git add .
+   git commit -m "Add GitHub Pages deployment"
+   git push origin main
+   ```
+
+4. **Monitor deployment**: Check the "Actions" tab in your GitHub repository to see the deployment progress.
+
+### Manual Deployment
+
+If you need to deploy manually:
+
+```bash
+npm run build
+# The built files will be in the `dist/` directory
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## 🛠️ Built With
 
-## 🧞 Commands
+- [Astro](https://astro.build/) - The web framework for content-driven websites
+- [GitHub Actions](https://github.com/features/actions) - CI/CD pipeline
+- [GitHub Pages](https://pages.github.com/) - Static site hosting
 
-All commands are run from the root of the project, from a terminal:
+## 📝 License
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+This project is open source and available under the [MIT License](LICENSE).
